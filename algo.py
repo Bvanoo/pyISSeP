@@ -310,6 +310,7 @@ print(f"la moyenne des cotes de vos joueurs est : {moyenne/j}")
 #endregion
 
 #region tri simultané deux tableaux
-
+tab = [18,28,42,15,93,54,12,0,12,3,4,87]
+tab2= [4,87,96,52,14,47,56,53,51,12,48,67]
 #endregion
 
