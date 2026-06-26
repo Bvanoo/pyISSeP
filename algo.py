@@ -352,3 +352,39 @@ print(f"la moyenne des cotes de vos joueurs est : {moyenne/j}")
 
 #endregion
 
+#region déplacement pion
+import msvcrt as m
+import os
+
+#ATTENTION NE FONCTIONNE PAS SUR CODE RUNNER, FAIRE CRTL F5
+def cls():
+    os.system("cls")
+
+board = []
+pawn = "♟️"
+j = 4
+t = 'a'
+
+while t != "g":
+    touch = m.getch()
+    t = touch.decode("ascii").lower()
+
+    if t == "q":
+        j = (j-1)%10
+    elif t == "d":
+        j = (j + 1)%10
+
+    board = []
+    for i in range(10):
+        if i == j:
+            board.append(pawn)
+        else:
+            board.append("🪙")
+
+    cls()
+    print("q pour gauche, d pour droit, g pour quitter")
+    print(" ".join(board))
+
+
+
+#endregion
