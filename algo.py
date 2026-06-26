@@ -310,8 +310,8 @@ print(f"la moyenne des cotes de vos joueurs est : {moyenne/j}")
 #endregion
 
 #region tri simultané deux tableaux
-# tab = [18,28,42,15,93,54,12,0,13,3,4,87]
-# tab2= [5,86,96,52,14,47,56,53,51,11,48,67]
+tab = [18,28,42,15,93,54,12,0,13,3,4,87]
+tab2= [5,86,96,52,14,47,56,53,51,11,48,67]
 
 # for i in range(len(tab)):
 #     mini = i
@@ -353,38 +353,69 @@ print(f"la moyenne des cotes de vos joueurs est : {moyenne/j}")
 #endregion
 
 #region déplacement pion
-import msvcrt as m
-import os
+# import msvcrt as m
+# import os
 
-#ATTENTION NE FONCTIONNE PAS SUR CODE RUNNER, FAIRE CRTL F5
-def cls():
-    os.system("cls")
+# #ATTENTION NE FONCTIONNE PAS SUR CODE RUNNER, FAIRE CRTL F5
+# def cls():
+#     os.system("cls")
+# pawn = "♟️"
+# j = 4
+# t = 'a'
 
-board = []
-pawn = "♟️"
-j = 4
-t = 'a'
+# while t != "g":
+#     touch = m.getch()
+#     t = touch.decode("ascii").lower()
 
-while t != "g":
-    touch = m.getch()
-    t = touch.decode("ascii").lower()
+#     if t == "q":
+#         j = (j-1)%10
+#     elif t == "d":
+#         j = (j + 1)%10
 
-    if t == "q":
-        j = (j-1)%10
-    elif t == "d":
-        j = (j + 1)%10
+#     board = []
+#     for i in range(10):
+#         if i == j:
+#             board.append(pawn)
+#         else:
+#             board.append("🪙")
 
-    board = []
-    for i in range(10):
-        if i == j:
-            board.append(pawn)
-        else:
-            board.append("🪙")
+#     cls()
+#     print("q pour gauche, d pour droit, g pour quitter")
+#     print(" ".join(board))
 
-    cls()
-    print("q pour gauche, d pour droit, g pour quitter")
-    print(" ".join(board))
+#endregion
 
+#region def carré
 
+# def toSquare(a):
+#     return a*a
+
+# print(toSquare(42))
+#endregion
+
+#region recherche tableau
+
+# def research(t,elem):
+#     for i in range(0,len(t)):
+#         if t[i]== elem:
+#             return i
+#     return -1
+        
+
+# print(research(tab2,147))
+
+#endregion
+
+#region fusion tableau
+
+# def mergeTable(t1,t2):
+#     t = []
+#     for i in range(len(t1+t2)):
+#         if i < len(t1):
+#             t.append(t1[i])
+#         else:
+#             t.append(t2[i%len(t1)])
+#     print(t)
+# mergeTable(tab, tab2)
 
 #endregion
