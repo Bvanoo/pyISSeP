@@ -310,7 +310,45 @@ print(f"la moyenne des cotes de vos joueurs est : {moyenne/j}")
 #endregion
 
 #region tri simultané deux tableaux
-tab = [18,28,42,15,93,54,12,0,12,3,4,87]
-tab2= [4,87,96,52,14,47,56,53,51,12,48,67]
+# tab = [18,28,42,15,93,54,12,0,13,3,4,87]
+# tab2= [5,86,96,52,14,47,56,53,51,11,48,67]
+
+# for i in range(len(tab)):
+#     mini = i
+#     for j in range(i+1, len(tab)):
+#         if tab[j]> tab[mini]:
+#             mini=j
+#     tab[i],tab[mini] = tab[mini], tab[i]
+
+# i=0
+# for i in range(len(tab2)):
+#     mini = i
+#     for j in range(i+1, len(tab2)):
+#         if tab2[j]> tab2[mini]:
+#             mini=j
+#     tab2[i],tab2[mini] = tab2[mini], tab2[i]
+
+# i=0
+# j=0
+# tab3 = []
+
+# while i<len(tab) and j<len(tab2):
+#     if tab[i]>=tab2[j]:
+#         tab3.append(tab[i])
+#         i+=1
+#     else:
+#         tab3.append(tab2[j])
+#         j+=1
+
+# while i < len(tab):
+#     tab3.append(tab[i])
+#     i+=1
+# while j < len(tab2):
+#     tab3.append(tab2[j])
+#     j+=1
+
+# print(tab3)
+
+
 #endregion
 
